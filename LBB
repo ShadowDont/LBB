@@ -1,0 +1,94 @@
+ if game:GetService("CoreGui"):FindFirstChild("Library") then
+ 
+      game:GetService("CoreGui"):FindFirstChild("Library"):Destroy()
+ 
+  end
+local VLib = loadstring(game:HttpGet("https://pastebin.com/raw/cC6gPLcn"))()
+MAINTTL = "UltimateGUI's LBB Script" 
+local win = VLib:Window("", Color3.fromRGB(196, 40, 28))
+local credit = win:Tab("#credit")
+credit:Label("Credits" )
+credit:Label("UltimateGUIScripter" )
+credit:Label("UI Toggle Key:  Right-Ctrl")
+credit:Label("Credit : UltimateGUIScripter")
+ 
+local Main = win:Tab("luckyblock")
+Main:Button("Destroy Gui",function()
+game.CoreGui["Library"]:Destroy()
+end)
+ 
+Main:Toggle("VOIDBLOCKS",function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/1qjbHgwx"))()
+end)
+ 
+Main:Toggle("GalaxyBlock",function(State)
+_G. loop = State
+while _G. loop do wait()
+        game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+        end
+end)
+Main:Toggle("RainbowBlock",function(State)
+_G. loop = State
+while _G. loop do wait()
+        game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()        	 	 	 
+        end
+end)
+ 
+Main:Toggle("DiamondBlock",function(State)
+_G. loop = State
+while _G. loop do wait()
+        game:GetService("ReplicatedStorage").SpawnDiamondBlock
+          :FireServer()
+         end
+end)
+ 
+Main:Toggle("SuperBlock",function(State)
+_G. loop = State
+while _G. loop do wait()
+        game:GetService("ReplicatedStorage").SpawnSuperBlock
+          :FireServer()
+         end
+end)
+ 
+Main:Toggle("LuckyBlock",function(State)
+_G. loop = State
+while _G. loop do wait()
+        game:GetService("ReplicatedStorage").SpawnLuckyBlock
+          :FireServer()
+         end
+end)
+ 
+local cred = win:Tab("Misc")
+cred:Button("Copy Discord Server",function()
+setclipboard("https://discord.gg/dY8rpSktyn")
+end)
+cred:Label("MADE BY: trash scripters, they broke the script to make it not work, and i the UltimateGUIScripter fixed it!")
+ 
+cred:Toggle("FpsBoost ",function()
+         loadstring(game:HttpGet("https://pastebin.com/raw/Knv6FJfQ"))()
+end)
+ 
+cred:Toggle("HitboxPlayers ",function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/NakV5X5Z"))()
+end)
+cred:Button("Open Speed Section",function()
+cred:Slider("RunSpeed",0,100,16,function(t)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+end)
+cred:Button("Open Speed Section2",function()
+end)
+cred:Toggle("speedoff ",function()
+ while true do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = false end
+Walkspeed()
+end)
+ 
+cred:Toggle("speed60 ",function()
+ while true do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60 end
+Walkspeed()
+end)
+ 
+cred:Toggle("speed100 ",function()
+ while true do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100 end
+Walkspeed()
+end)
+end)
